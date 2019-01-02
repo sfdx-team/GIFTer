@@ -2,4 +2,4 @@
 .vscode
 scripts
 .resource
-
+*.key
