@@ -5,7 +5,6 @@ public with sharing class ChatterHelper {
 
     String fileName = 'giphy.gif';
     String body = chatterText;
-    String wonder = 'wondr'
 
     Blob imageData = getImageData(imageUrl);
 
@@ -50,9 +49,7 @@ public with sharing class ChatterHelper {
 
     return file.Id;
   }
-  public String getHello() {
-    return 'hi';
-}
+
   private static Blob getImageData(String url) {
 
     HttpRequest req = new HttpRequest();
