@@ -50,7 +50,9 @@ public with sharing class ChatterHelper {
 
     return file.Id;
   }
-
+  public String getHello() {
+    return 'hi';
+}
   private static Blob getImageData(String url) {
 
     HttpRequest req = new HttpRequest();
