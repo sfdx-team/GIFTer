@@ -1,11 +1,12 @@
 public with sharing class ChatterHelper {
-    
+
   @AuraEnabled
   public static String getChatterGroups(String imageUrl, String chatterText) {
 
     String fileName = 'giphy.gif';
     String body = chatterText;
-    
+    String wonder = 'wondr'
+
     Blob imageData = getImageData(imageUrl);
 
     ID fileId = saveFile(fileName, imageData);
@@ -55,7 +56,7 @@ public with sharing class ChatterHelper {
     HttpRequest req = new HttpRequest();
     req.setEndpoint( url );
     req.setHeader('accept', 'image/*');
-    
+
     req.setMethod('GET');
     req.setCompressed( false );
 
